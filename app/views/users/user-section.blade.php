@@ -63,7 +63,7 @@
 
                     $project = $userBug->bug->project;
 
-                    echo "<b>$i.</b> <u>$project->name</u> : <a href='$root/bug-detail/$userBug->id'>" . $userBug->bug->title . "</a><br/><br/>";
+                    echo "<b>$i.</b> <u>$project->name</u> : <a href='$root/bug-detail/$userBug->bug_id'>" . $userBug->bug->title . "</a><br/><br/>";
                 }
             }
         ?>
