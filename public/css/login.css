@@ -1,0 +1,133 @@
+.ys-admin-block {
+    height: 400px;
+    margin: 70px auto;
+    width: 300px;
+    position: relative;
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.ys-admin-block .header-block h1 {
+    color: #414848;   
+	font:28px/34px "Bree Serif", serif;   
+    font-weight: 300;   
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 1px 1px 0 rgba(256, 256, 256, 1.0);
+}
+
+.ys-admin-block .header-block {
+    padding: 12px 0 20px;
+    text-align: center;
+}
+
+.ys-admin-block .content {
+    padding: 0 30px 37px;
+}
+
+.ys-admin-block .content .input {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.50);
+    color: #9d9e9e;
+    font-family:14px/28px  "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  
+    font-weight: 400;
+    padding: 15px 25px;
+    text-shadow: 1px 1px 0 rgba(256, 256, 256, 1.0);
+    width: 188px;
+}
+
+.ys-admin-block .content .input:focus {
+    background: #dfe9ec;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: #414848;
+}
+
+.ys-admin-block .content .input:hover {
+    background: #dfe9ec;
+    color: #414848;
+}
+
+.ys-admin-block .content .user-icon, .ys-admin-block .content .pass-icon {
+    display: block;
+    height: 47px;
+    left: 0;
+    padding-right: 2px;
+    position: absolute;
+    width: 46px;
+    z-index: -1;
+}
+
+.input, .user-icon, .pass-icon, .btn-login, .register {
+    transition: all 0.5s ease 0s;
+}
+
+.ys-admin-block .content input:focus + span {
+    left: -46px;
+}
+
+.ys-admin-block .content .user-icon {
+    background: rgba(65, 72, 72, 0.75) url("../images/user-icon.png") no-repeat scroll center center;
+    top: 146px;
+}
+
+.ys-admin-block .content .pass-icon {
+    background: rgba(65, 72, 72, 0.75) url("../images/pass-icon.png") no-repeat scroll center center;
+    top: 219px;
+}
+
+.login-form .input.password {
+    margin-top: 25px;
+}
+
+.ys-admin-block .footer-block {
+    background: #d4dedf;
+    border-top: 1px solid #fff;
+    box-shadow: 0 1px 0 inset rgba(0, 0, 0, 0.15);
+    overflow: auto;
+    padding: 25px 30px 30px;
+}
+
+.ys-admin-block .footer-block .btn-login {
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    box-shadow: 0 0 2px inset rgba(256, 256, 256, 0.75);
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-family: "Bree Serif", serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 20px;
+    text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.ys-admin-block .footer-block .btn-login:hover {
+    background: #3f9db8;
+    border: 1px solid rgba(256, 256, 256, 0.75);
+    box-shadow: 0 1px 3px inset rgba(0, 0, 0, 0.5);
+}
+
+.ys-admin-block .footer-block .btn-login:focus {
+    background: #56c2e1;
+    bottom: -1px;
+    box-shadow: 0 1px 6px inset rgba(256, 256, 256, 0.75);
+    position: relative;
+}
+
+.ys-admin-block .gradient {
+    background-image: url("../images/gradient.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    position: fixed;
+    top: 50%;
+    width: 600px;
+    z-index: -2;
+}

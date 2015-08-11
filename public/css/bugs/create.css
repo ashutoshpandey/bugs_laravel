@@ -1,0 +1,9 @@
+.add-file{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.remove-file{
+    cursor: pointer;
+    text-decoration: underline;
+}

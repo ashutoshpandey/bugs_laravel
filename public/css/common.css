@@ -1,0 +1,38 @@
+.form-row{ margin-bottom: 10px; }
+
+.form-row input[type='text'],.form-row input[type='password'],.form-row textarea,.form-row select{width: 80%;}
+
+.form-label{ padding: 10px 0; }
+
+.form-header{
+    padding: 0;
+    height: auto !important;
+    padding-bottom: 5px;
+    font-size: 14px;
+    border-bottom: solid 1px lightslategrey;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+input[type='text'],input[type='password'],textarea,select{ padding: 5px; }
+
+.icon{
+    width: 16px;
+    height: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #5375ff;
+}
+a:hover{ color: #ff522a; }
+
+.blocker{ color: #7c0000; font-weight: bold; }
+.critical{ color: #ed1292; font-weight: bold; }
+.major{ color: #3247ff; font-weight: bold; }
+.minor{ color: #ffb200; font-weight: bold; }
+.warning{ color: #0cff12; font-weight: bold; }
+
+.center-text{ text-align: center; }
+.bug-image{ max-width: 400px; max-height: 400px; }
+
