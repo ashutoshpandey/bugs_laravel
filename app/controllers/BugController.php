@@ -90,7 +90,7 @@ class BugController extends BaseController {
                 $project = Project::find($bug->project_id);
 
                 if(isset($user))
-                    $this->sendNewBugEmail($user->name, $user->email, $project->name, $bug->description, null);
+                    $this->sendNewBugEmail($user->name, $user->email, $project->name, $bug->title, $bug->description, null);
             }
         }
 
@@ -317,13 +317,14 @@ class BugController extends BaseController {
             return json_encode(array('found' => false, 'message' => 'logged'));
     }
 
-    public function sendNewBugEmail($username, $email, $project, $description, $attachments){
+    public function sendNewBugEmail($username, $email, $project, $bugTitle, $description, $attachments){
         $portal = "BUGS@YOGASMOGA";
 
         $data['project'] = $project;
         $data['description'] = $description;
         $data['username'] = $username;
         $data['portal'] = $portal;
+        $data['bugTitle'] = $bugTitle;
 
         $result = Mail::send('emails.new-bug', $data, function($message) use ($email, $attachments) {
             $message->to($email);

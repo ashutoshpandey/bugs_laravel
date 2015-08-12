@@ -11,6 +11,7 @@
 			There is a new bug posted on {{$portal}}
 			<hr/>
 				Project: {{$project}} <br/><br/>
+				Title: {{$bugTitle}} <br/><br/>
 				{{$description}}
 			<hr/>
 		</div>
