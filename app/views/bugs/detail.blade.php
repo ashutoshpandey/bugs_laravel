@@ -36,7 +36,7 @@
             </div>
 
             <div class="form-row">
-                Posted by : {{$bug->user->name}}
+                Posted by : <span style="color:#478bff; font-weight: 700">{{$bug->user->name}}</span> on <b>( {{date('d-M-Y h:i A', strtotime($bug->created_at))}} )</b>
             </div>
             <div class="form-row">
                 Level : <span class="{{strtolower($bug->severity)}}">{{$bug->severity}}</span>
