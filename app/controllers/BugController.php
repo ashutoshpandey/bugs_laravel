@@ -159,6 +159,8 @@ class BugController extends BaseController {
                 $bug->status = Input::get('status');
                 $bug->save();
 
+                BugUser::where('bug_id', '=', $bug->id) ->update(['status' => $bug->status]);
+
                 echo 'done';
             }
             else
